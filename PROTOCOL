@@ -1,0 +1,26 @@
+
+COMMANDS (Commands sent from client to server)
+-----------------------------------------------------------
+REQ: GET_PLAYERS
+INT: PLAYER_INTERPRETER
+RES: ['player1', 'player2', ...]
+
+REQ: SET_POSITION player1 22 33
+INT: POS_INTERPRETER
+RES: ACK
+
+REQ: MESSAGE hello world!
+INT: MSG_INTERPRETER
+RES: ACK
+
+REQ: SET_DEAD
+INT: 
+
+PUSH NOTIFICATIONS (Commands sent from server to client)
+-----------------------------------------------------------
+- GAME_START
+- GAME_END
+- PLAYER_DIED
+- PLAYER_MOVED
+- SERVER_FULL
+- ACK
